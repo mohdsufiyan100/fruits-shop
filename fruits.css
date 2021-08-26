@@ -1486,6 +1486,7 @@ span{
     }
     .products{
         top: 50%;
+        left: 0%;
     }
     .productcontainer{
         /* background-color: red; */
