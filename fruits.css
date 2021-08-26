@@ -1137,8 +1137,8 @@ span{
     color: yellowgreen;
 }
 .socialicon{
-    margin-left: -2.20rem;
-    margin-top: 2.0rem;
+    margin-left: -1.20rem;
+    margin-top: 1.40rem;
 }
 .socialicon .fa{
     background-color: transparent;
@@ -1629,8 +1629,8 @@ span{
     .supportbaar{
         position: absolute;
         top: 280%;
-        left: 15%;
-        width: 30.0rem;
+        left: 5%;
+        width: 40.0rem;
         height: 15.0rem;
         border-radius: 10px;
     }
@@ -1647,8 +1647,8 @@ span{
     #aboutus{
         position: absolute;
         top: 304%;
-        left: 15%;
-        width: 30.0rem;
+        left: 5%;
+        width: 40.0rem;
         height: 25.0rem;
     }
     #aboutus img{
