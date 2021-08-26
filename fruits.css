@@ -1491,7 +1491,7 @@ span{
     }
     .products{
         top: 50%;
-        left: 0%;
+        left: -2%;
     }
     .productcontainer{
         /* background-color: red; */
@@ -1508,13 +1508,13 @@ span{
     .ourprd{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         position: relative;
-        left: 15%;
+        left: 10%;
         display: block;
     }
     .filter{
         position: absolute;
         display: flex;
-        left: 60%;
+        left: 55%;
         top: 0%;
     }
 
@@ -1634,8 +1634,8 @@ span{
     .supportbaar{
         position: absolute;
         top: 280%;
-        left: 5%;
-        width: 40.0rem;
+        left: 6%;
+        width: 37.0rem;
         height: 15.0rem;
         border-radius: 10px;
     }
@@ -1652,8 +1652,8 @@ span{
     #aboutus{
         position: absolute;
         top: 304%;
-        left: 5%;
-        width: 40.0rem;
+        left: 6%;
+        width: 37.0rem;
         height: 25.0rem;
     }
     #aboutus img{
