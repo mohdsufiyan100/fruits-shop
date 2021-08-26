@@ -1122,6 +1122,11 @@ span{
     letter-spacing: .10rem;
     /* display: flex; */
 }
+.contN{
+    text-decoration: none;
+    color: white;
+    margin-left: -3.0rem;
+}
 .footercontact ul{
     margin-top: 1.50rem;
 }
@@ -1685,6 +1690,9 @@ span{
         position: absolute;
         left: 4%;
         top: 30%;
+    }
+    .contN{
+        margin-left: -.40rem;
     }
     .footermenu{
         position: absolute;
