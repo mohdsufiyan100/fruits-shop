@@ -1,0 +1,1866 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+.headerlogo h2{
+    text-align: center;
+    margin: auto;
+    width: 10%;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 1.90rem;
+    font-size: 1.7rem;
+}
+.contactno{
+    margin-left: 4.0rem;
+    margin-top: -2.0rem;
+    font-size: 1.2rem;
+}
+.contactno a{
+    
+    text-decoration: none;
+    color: black;
+}
+.contactno a i{
+   margin: .40rem;
+}
+.search{
+    font-size: 1.40rem;
+    margin-top: -2.0rem;
+    margin-right: 18.20rem;
+    display: inline;
+    float: right;
+}
+.search button{
+    font-size: 1.20rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#searchinput{
+    border: none;
+    border: 2px solid green;
+    outline: none;
+    padding-left: .70rem;
+    color: black;
+    font-size: 1.20rem;
+    border-radius: 1.0rem;
+    display: none;
+    width: 200px;
+    animation: 2s search;
+}
+@keyframes search{
+    0%{
+        width: 0px;
+    }
+    70%{
+        width: 200px;
+    }
+
+}
+
+#basket{
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    /* float: right; */
+    /* margin-top: 2.0rem; */
+    font-size: 1.20rem;
+    cursor: pointer;
+}
+#addtocart{
+    margin-bottom: -5px;
+    margin-left: 20px;
+    font-size: 1.50rem;
+    /* background-color: yellowgreen; */
+    padding: 2px 10px;
+    border-radius: 30px
+}
+#register{
+    float: right;
+    margin-right: 3.0rem;
+    margin-top: -2.0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.register p i{
+   margin: .40rem;
+}
+.responsive{
+    display: none;
+}
+.menubaar{
+    padding-left: 8.0rem;
+    padding-top: 1.0rem;
+    animation: 1s menubaar;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 11%;
+    animation: 3s menubaar;
+}
+@keyframes menubaar{
+    0%{
+        padding-left: 0.0rem;
+    }
+    70%{
+        padding-left: 8.0rem;
+    }
+}
+.menubaar ul li{
+    display:inline-flex;
+    margin-left: 3.90rem;
+    margin-top: -1.0rem;
+    cursor: pointer;
+    padding: .60rem;
+}
+.salelink{
+    text-decoration-line: none;
+    color: black;
+}
+.menubaar ul li:hover{
+    background-color:yellowgreen;
+}
+.fruitslist{
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    display: none;
+}
+.fruits:hover .fruitslist{
+    display: block;
+}
+.fruits:hover #fruits-arrow{
+    transform: rotate(180deg);
+}
+.fruits:hover .fruitslist ul{
+    position: absolute;
+    color: black;
+    background-color: yellowgreen;
+}
+@keyframes fru{
+    0%{
+        margin-top: -2.0px;
+    }
+    10%{
+        margin-top: 1.0px;
+    }
+}
+.fruitslist ul li{
+    margin-left: 1.20rem;
+    margin-right: 1.0rem;
+    margin-top: 1.0rem;
+    padding: 1.0rem;
+    cursor: pointer;
+    animation: .31s ease fru;
+}
+.fruitslist ul li:hover{
+    background-color: yellowgreen;
+}
+.fruitslist i ,.fa{
+    margin-left: .30rem;
+}
+.vegetablelist{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    display: none;
+}
+.vegetable:hover .vegetablelist{
+    display: block;
+}
+.vegetable:hover #vegetable-arrow{
+    transform: rotate(180deg);
+}
+.vegetable:hover .vegetablelist ul{
+    position: absolute;
+    color: black;
+    background-color: yellowgreen;
+}
+.vegetablelist ul li{
+    margin-left: 1.20rem;
+    margin-right: 1.0rem;
+    margin-top: 1.0rem;
+    padding: 1.0rem;
+    cursor: pointer;
+    animation: .51s ease veg;
+}
+@keyframes veg{
+    0%{
+        margin-top: -2.0px;
+    }
+    10%{
+        margin-top: 1.0px;
+    }
+}
+.banner img{
+    position: absolute;
+    top: 19%;
+    object-fit:cover;
+    width: 100vw;
+    height: 32.9rem;
+}
+.heading{
+    position:absolute;
+    top: 40%;
+    left: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.90rem;
+    padding-left: 3.0rem;
+    animation: 2s heading;
+    text-shadow: 2px 2px 5px rgb(123, 163, 142);
+}
+@keyframes heading{
+    from{
+        left: -10%;
+    }
+}
+.heading button{
+    background-color: yellowgreen;
+    font-size: 1.80rem;
+    padding: 1.0rem 2.0rem;
+    border: none;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    margin-left: 0.0rem;
+    margin-top: 2.0rem;
+    cursor: pointer;
+    box-shadow: 3px 2px 5px rgb(123, 163, 142);
+    animation: 3s buttonanimation;
+    transition: .30s;
+}
+.heading button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .20s;
+}
+@keyframes buttonanimation{
+    0%{
+        border: 2px solid rgb(207, 221, 21);
+    }
+    100%{
+        border: 2px solid rgb(21, 195, 143);
+    }
+}
+.products{
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    width: 250px;
+}
+.ourprd{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 50%;
+    display: block;
+}
+.filter{
+    position: absolute;
+    display: flex;
+    left: 320%;
+    top: 0%;
+}
+.filter button{
+    padding: .70rem 1.40rem .70rem 1.40rem;
+    font-size: 1.20rem;
+    margin-left: 1.0rem;
+    border: none;
+}
+.feature{
+    background-color: yellowgreen;
+}
+.filter button:hover{
+    background-color: yellowgreen;
+}
+.productcontainer{
+    /* background-color: red; */
+    margin-top: 3.0rem;
+    margin-left: 4.0rem;
+    display: grid;
+    width: 90vw;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1.0rem;
+    /* column-gap: -4.0rem; */
+}
+.product1{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+    transition: all 1s;
+    width: 16.0rem;
+    height: 27.0rem;
+    /* position: absolute;
+    top: 250%; */
+    
+}
+.product1:hover{
+    box-shadow: 0px 0px 4px 0px rgb(61, 195, 67);
+    transition: all .50s;
+}
+.product1dis{
+    padding-top: 18.0rem;
+}
+.product1 img{
+    width: 25.70rem;
+    height: 18.0rem;
+    position: absolute;
+    margin-left: -5.0rem;
+    margin-right: -5.0rem;
+}
+.disscribe1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+    padding-left: 4.0rem;
+    margin-top: -.40rem;
+    
+}
+.price1{
+    font-size: 1.30rem;
+    padding-left: 4.80rem;
+    margin-top: 1.0rem;
+}
+.product1 button{
+    background-color: yellowgreen;
+    border: none;
+    font-size: 1.50rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .70rem 1.50rem;
+    margin-left: 3.10rem;
+    margin-top:1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    transition: .30s;
+    cursor: pointer;
+}
+.product1 button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .30s;
+}
+.product1 button ,.fa{
+    margin-right: .50rem;
+}
+
+
+.product2{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+    transition: all 1s;
+    width: 16.0rem;
+    height: 27.0rem;
+    /* position: absolute;
+    top: 250%;
+    left: 120%; */
+}
+.product2:hover{
+    box-shadow: 0px 0px 4px 0px rgb(61, 195, 67);
+    transition: all .50s;
+}
+.product2dis{
+    padding-top: 18.0rem;
+}
+.product2 img{
+    width: 13.70rem;
+    position: absolute;
+    margin-top: -1.0rem;
+    margin-left: 2.0rem;
+    margin-right: -5.0rem;
+}
+.disscribe2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+    padding-left: 3.0rem;
+    margin-top: -.40rem;
+    
+}
+.price2{
+    font-size: 1.30rem;
+    padding-left: 5.80rem;
+    margin-top: 1.0rem;
+}
+.product2 button{
+    background-color: yellowgreen;
+    border: none;
+    font-size: 1.50rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .70rem 1.50rem;
+    margin-left: 3.50rem;
+    margin-top:1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    transition: .30s;
+    cursor: pointer;
+}
+.product2 button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .30s;
+}
+.product2 button ,.fa{
+    margin-right: .50rem;
+}
+
+
+
+
+.product3{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+    transition: all 1s;
+    width: 16.0rem;
+    height: 27.0rem;
+    /* position: absolute;
+    top: 250%;
+    left: 245%; */
+}
+.product3:hover{
+    box-shadow: 0px 0px 4px 0px rgb(61, 195, 67);
+    transition: all .50s;
+}
+.product3dis{
+    padding-top: 18.0rem;
+}
+.product3 img{
+    width: 25.70rem;
+    position: absolute;
+    margin-top: -1.0rem;
+    margin-left: -11.0rem;
+    object-fit:fill;
+}
+.disscribe3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+    padding-left: 5.80rem;
+    margin-top: -.40rem;
+    
+}
+.price3{
+    font-size: 1.30rem;
+    padding-left: 5.80rem;
+    margin-top: 1.0rem;
+}
+.product3 button{
+    background-color: yellowgreen;
+    border: none;
+    font-size: 1.50rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .70rem 1.50rem;
+    margin-left: 3.50rem;
+    margin-top:1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    transition: .30s;
+    cursor: pointer;
+}
+.product3 button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .30s;
+}
+.product3 button ,.fa{
+    margin-right: .50rem;
+}
+
+
+.product4{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+    transition: all 1s;
+    width: 16.0rem;
+    height: 27.0rem;
+    /* position: absolute;
+    top: 250%;
+    left: 368%; */
+}
+.product4:hover{
+    box-shadow: 0px 0px 4px 0px rgb(61, 195, 67);
+    transition: all .50s;
+}
+.product4dis{
+    padding-top: 18.0rem;
+}
+.product4 img{
+    width: 18.70rem;
+    position: absolute;
+    margin-top: 3.0rem;
+    margin-left: -1.0rem;
+}
+.disscribe4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+    padding-left: 4.80rem;
+    margin-top: -.40rem;
+    
+}
+.price4{
+    font-size: 1.30rem;
+    padding-left: 5.80rem;
+    margin-top: 1.0rem;
+}
+.product4 button{
+    background-color: yellowgreen;
+    border: none;
+    font-size: 1.50rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .70rem 1.50rem;
+    margin-left: 3.50rem;
+    margin-top:1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    transition: .30s;
+    cursor: pointer;
+}
+.product4 button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .30s;
+}
+.product4 button ,.fa{
+    margin-right: .50rem;
+}
+.product5{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+    transition: all 1s;
+    width: 16.0rem;
+    height: 27.0rem;
+    /* position: absolute;
+    top: 1300%;
+    left: 0%; */
+}
+.product5:hover{
+    box-shadow: 0px 0px 4px 0px rgb(61, 195, 67);
+    transition: all .50s;
+}
+.product5dis{
+    padding-top: 18.0rem;
+    /* position: absolute; */
+}
+.product5 img{
+    width: 22.70rem;
+    /* height: 15.0rem; */
+    position: absolute;
+    margin-top: 3.0rem;
+    margin-left: -3.0rem;
+}
+.disscribe5{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+    padding-left: 4.80rem;
+    margin-top: -.40rem;
+    
+}
+.price5{
+    font-size: 1.30rem;
+    padding-left: 5.80rem;
+    margin-top: 1.0rem;
+}
+.product5 button{
+    background-color: yellowgreen;
+    border: none;
+    font-size: 1.50rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .70rem 1.50rem;
+    margin-left: 3.50rem;
+    margin-top:1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    transition: .30s;
+    cursor: pointer;
+}
+.product5 button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .30s;
+}
+.product5 button ,.fa{
+    margin-right: .50rem;
+}
+
+
+.product6{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+    transition: all 1s;
+    width: 16.0rem;
+    height: 27.0rem;
+    /* position: absolute;
+    top: 1300%;
+    left: 120%; */
+}
+.product6:hover{
+    box-shadow: 0px 0px 4px 0px rgb(61, 195, 67);
+    transition: all .50s;
+}
+.product6dis{
+    padding-top: 18.0rem;
+    /* position: absolute; */
+}
+.product6 img{
+    width: 22.70rem;
+    /* height: 15.0rem; */
+    position: absolute;
+    margin-top: 3.0rem;
+    margin-left: -3.0rem;
+}
+.disscribe6{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+    padding-left: 5.0rem;
+    margin-top: -.40rem;
+    
+}
+.price6{
+    font-size: 1.30rem;
+    padding-left: 5.80rem;
+    margin-top: 1.0rem;
+}
+.product6 button{
+    background-color: yellowgreen;
+    border: none;
+    font-size: 1.50rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .70rem 1.50rem;
+    margin-left: 3.50rem;
+    margin-top:1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    transition: .30s;
+    cursor: pointer;
+}
+.product6 button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .30s;
+}
+.product6 button ,.fa{
+    margin-right: .50rem;
+}
+
+
+.product7{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+    transition: all 1s;
+    width: 16.0rem;
+    height: 27.0rem;
+    /* position: absolute;
+    top: 1300%;
+    left: 245%; */
+}
+.product7:hover{
+    box-shadow: 0px 0px 4px 0px rgb(61, 195, 67);
+    transition: all .50s;
+}
+.product7dis{
+    padding-top: 18.0rem;
+    /* position: absolute; */
+}
+.product7 img{
+    width: 17.70rem;
+    /* height: 15.0rem; */
+    position: absolute;
+    margin-top: 3.0rem;
+    margin-left: -.60rem;
+}
+.disscribe7{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+    padding-left: 4.80rem;
+    margin-top: -.40rem;
+    
+}
+.price7{
+    font-size: 1.30rem;
+    padding-left: 5.80rem;
+    margin-top: 1.0rem;
+}
+.product7 button{
+    background-color: yellowgreen;
+    border: none;
+    font-size: 1.50rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .70rem 1.50rem;
+    margin-left: 3.50rem;
+    margin-top:1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    transition: .30s;
+    cursor: pointer;
+}
+.product7 button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .30s;
+}
+.product7 button ,.fa{
+    margin-right: .50rem;
+}
+
+
+.product8{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+    transition: all 1s;
+    width: 16.0rem;
+    height: 27.0rem;
+    /* position: absolute;
+    top: 1300%;
+    left: 368%; */
+}
+.product8:hover{
+    box-shadow: 0px 0px 4px 0px rgb(61, 195, 67);
+    transition: all .50s;
+}
+.product8dis{
+    padding-top: 18.0rem;
+    /* position: absolute; */
+}
+.product8 img{
+    width: 19.70rem;
+    /* height: 15.0rem; */
+    position: absolute;
+    margin-top: -10.0rem;
+    margin-left: -2.0rem;
+}
+.disscribe8{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.0rem;
+    padding-left: 5.50rem;
+    margin-top: -.40rem;
+    
+}
+.price8{
+    font-size: 1.30rem;
+    padding-left: 5.30rem;
+    margin-top: 1.0rem;
+}
+.product8 button{
+    background-color: yellowgreen;
+    border: none;
+    font-size: 1.50rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .70rem 1.50rem;
+    margin-left: 3.50rem;
+    margin-top:1.0rem;
+    border-bottom-right-radius: 1.0rem;
+    border-top-left-radius: 1.0rem;
+    transition: .30s;
+    cursor: pointer;
+}
+.product8 button:hover{
+    border-bottom-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;
+
+    border-bottom-right-radius: .0rem;
+    border-top-left-radius: .0rem;
+    transition: .30s;
+}
+.product8 button ,.fa{
+    margin-right: .50rem;
+}
+
+.onsale{
+    position: absolute;
+    top: 270%;
+}
+.onsalecontant img{
+    width: 100vw;
+    /* height: 530px; */
+    height: 100vh;
+    object-fit:cover;
+}
+
+.onsaleproduct h1{
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(71, 107, 62);
+    border-radius: 10px;
+    padding: .40rem 4.0rem;
+    position: absolute;
+    top: 7%;
+    left: 56%;
+    animation: 3s sale infinite;
+    /* transition: .50s; */
+}
+@keyframes sale{
+    0%{
+        background-color: green;
+    }
+    5%{
+        background-color: green;
+    }
+    
+}
+.saleproduct1{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+    width: 23.30rem;
+    height: 13.50rem;
+    background-color: rgb(243, 236, 236);
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .20rem;
+}
+.saleproductdis1{
+    float: right;
+    margin-top: 2.0rem;
+    margin-right: 2.0rem;
+    text-align: center;
+}
+.saleproductdis1 p{
+    margin-top: .60rem;
+}
+.saleproductdis1 button{
+    background-color: yellowgreen;
+    border: none;
+    padding: 1.0rem 2.0rem;
+    font-size: 1.20rem;
+    border-radius: .20rem;
+    margin-top: .40rem;
+}
+.saleproduct1 img{
+    position: absolute;
+    left: -5%;
+    top: -80%;
+    width: 15.0rem;
+    height: 25.0rem;
+}
+
+.saleproduct2{
+    position:absolute;
+    top: 20%;
+    left: 68%;
+    /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+    width: 23.30rem;
+    height: 13.50rem;
+    background-color: rgb(243, 236, 236);
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .20rem;
+}
+.saleproductdis2{
+    float: right;
+    margin-top: 2.0rem;
+    margin-right: 2.0rem;    
+    text-align: center;
+}
+.saleproductdis2 p{
+    margin-top: .60rem;
+}
+.saleproductdis2 button{
+    margin-top: .40rem;
+    background-color: yellowgreen;
+    border: none;
+    padding: 1.0rem 2.0rem;
+    font-size: 1.20rem;
+    border-radius: .20rem;
+}
+.saleproduct2 img{
+    position:absolute;
+    left: 20%;
+    top: 80%;
+    width: 22.0rem;
+    height: 17.0rem;
+}
+
+.saleproduct3{
+    position: absolute;
+    top: 60%;
+    left: 68%;
+    /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+    width: 23.30rem;
+    height: 13.50rem;
+    background-color: rgb(243, 236, 236);
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .20rem;
+}
+.saleproductdis3{
+    float: right;   
+    margin-top: 2.0rem; 
+    margin-right: 2.0rem;
+    text-align: center;
+}
+.saleproductdis3 p{
+    margin-top: .60rem;
+}
+.saleproductdis3 button{
+    margin-top: .40rem;
+    background-color: yellowgreen;
+    border: none;
+    padding: 1.0rem 2.0rem;
+    font-size: 1.20rem;
+    border-radius: .20rem;
+}
+.saleproduct3 img{
+    position: absolute;
+    left: -40%;
+    top: -150%;
+    width: 22.0rem;
+    height: 17.0rem;
+}
+
+.saleproduct4{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+    width: 23.30rem;
+    height: 13.50rem;
+    background-color: rgb(243, 236, 236);
+    font-size: 1.2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .20rem;
+}
+.saleproductdis4{
+    float: right;   
+    margin-top: 2.0rem;
+    margin-right: 2.0rem; 
+    text-align: center;
+}
+.saleproductdis4 p{
+    margin-top: .60rem;
+}
+.saleproductdis4 button{
+    margin-top: .40rem;
+    background-color: yellowgreen;
+    border: none;
+    padding: 1.0rem 2.0rem;
+    font-size: 1.20rem;
+    border-radius: .20rem;
+}
+.saleproduct4 img{
+    position: absolute;
+    left: -1%;
+    top: 6%;
+    width: 15.0rem;
+    height: 11.0rem;
+}
+.supportbaar{
+    position: absolute;
+    top: 380%;
+    left: 12%;
+    background-color: white;
+    box-shadow: 0px 0px 2px .20px rgb(19, 20, 20);
+    width: 60.0rem;
+    height: 6.0rem;
+    border-radius: 10px;
+}
+.support{
+    display: flex;
+    margin: 1.10rem 2.0rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.20rem;
+}
+.support p{
+    margin-left: 3.0rem;
+    cursor: pointer;
+}
+.support p .fa{
+    padding-right: .30rem;
+}
+#aboutus{
+    position: absolute;
+    top: 400%;
+    left: 20%;
+    border-radius: 2.0rem;
+    width: 50.0rem;
+    height: 20.0rem;
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px rgb(15, 15, 15);
+}
+#aboutus img{
+    width: 140px;
+    margin: auto;
+    display: flex;
+    clip-path: circle(30% at 50% 30%);
+}
+#aboutus p{
+    margin-top: -5.0rem;
+    margin-left: 19.0rem;
+    font-size: 1.0rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* position: absolute; */
+}
+span{
+    color: green;
+}
+.intro p{
+    font-style: oblique;
+    font-kerning:normal;
+}
+.intro{
+    position: absolute;
+    left: -37%;
+    top: 80%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#footer{
+    position: absolute;
+    top: 460%;
+    background-color: rgb(14, 13, 13);
+    color: white;
+    width: 100%;
+    height: 90vh;
+}
+.footerinput{
+    display: flex;
+    margin: auto;
+    width: 600px;
+    padding-top: 2.0rem;
+}
+.footerinput input{
+    font-size: 1.50rem;
+    border: 2px solid yellowgreen;
+    outline: none;
+    border-radius: 5px;
+    padding: 0rem 5.40rem .0rem 1.0rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footerinput button{
+    padding: .70rem 2.0rem;
+    font-size: 1.50rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
+    border-radius: 5px;
+    margin-left: .40rem;
+    transition: all .50s;
+    cursor: pointer;
+}
+.footerinput button:hover{
+    background-color: yellowgreen;
+    color: white;
+    transition: all .50s;
+}
+.footermenu{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .10rem;
+}
+.footermenu ul{
+    margin-top: 1.50rem;
+}
+.footermenu ul li{
+   display: block;
+   margin-top: .50rem;
+   padding: .5rem;
+   cursor: pointer;
+
+}
+.footermenu ul li:hover{
+    color: yellowgreen;
+}
+
+.footerservice{
+    position: absolute;
+    left: 68%;
+    top: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .10rem;
+    /* display: flex; */
+}
+.footerservice ul{
+    margin-top: 1.50rem;
+}
+.footerservice ul li{
+   display: block;
+   margin-top: .50rem;
+   padding: .5rem;
+   cursor: pointer;
+
+}
+.footerservice ul li:hover{
+    color: yellowgreen;
+}
+.footercontact{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .10rem;
+    /* display: flex; */
+}
+.footercontact ul{
+    margin-top: 1.50rem;
+}
+.footercontact ul li{
+   display: block;
+   margin-left: -3.50rem;
+   margin-top: .0rem;
+   padding: .5rem;
+   cursor: pointer;
+
+}
+.footercontact ul li:hover{
+    color: yellowgreen;
+}
+.socialicon{
+    margin-left: -2.20rem;
+    margin-top: 2.0rem;
+}
+.socialicon .fa{
+    background-color: transparent;
+    color: yellowgreen;
+    font-size: 1.80rem;
+    padding: 1.0rem;
+    border: 2px solid yellowgreen;
+    border-radius: 100px;
+    transition: all .60s;
+    cursor: pointer;
+}
+.socialicon .fa:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+.menusocialicon{
+    display: none;
+}
+#userid{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    transform: translate(-50% , -50%);
+    width: 400px;
+    height: 400px;
+    display: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#login{
+    padding: 40px 80px;
+    display: block;
+    animation: 1.0s loginanimation;
+}
+@keyframes loginanimation{
+    from{
+        transform:rotateX(90deg);
+    }
+}
+#login .loginput input{
+    margin-top: 30px;
+    padding: 10px 10px;
+    width: 230px;
+    background-color:transparent;
+    color: white;
+    border: none;
+    font-size: 1.10rem;
+    border-bottom: 1px solid white;
+    /* border: none; */
+    outline: none;
+}
+#login button{
+    width: 250px;
+    height: 40px;
+    font-size: 1.10rem;
+    margin-top: 20px;
+    background-color: yellowgreen;
+    border: none;
+    outline: none;
+}
+.loginput label{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    padding: 40px 6px;
+    transition: all .50s;
+    pointer-events: none;
+}
+#login .loginput input:focus ~ label,
+#login .loginput input:valid ~ label
+{
+    top: -40%;  
+    left: -2%; 
+    color: rgb(12, 122, 122);
+}
+#login .loginput{
+    position: relative;
+}
+#log0{
+    text-align: center;
+    margin-bottom: -4px;
+}
+#forsignup{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+#signup{
+    padding: 0px 80px;
+    display: none;
+    animation: 1.0s signupanimation;
+}
+@keyframes signupanimation{
+    from{
+        transform:rotateX(90deg);
+    }
+}
+
+
+
+
+#signup .signinput input{
+    margin-top: 30px;
+    padding: 10px 10px;
+    width: 230px;
+    background-color:transparent;
+    color: white;
+    border: none;
+    font-size: 1.10rem;
+    border-bottom: 1px solid white;
+    /* border: none; */
+    outline: none;
+}
+#signup button{
+    width: 250px;
+    height: 40px;
+    font-size: 1.10rem;
+    margin-top: 20px;
+    background-color: yellowgreen;
+    border: none;
+    outline: none;
+}
+.signinput label{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    padding: 40px 6px;
+    transition: all .50s;
+    pointer-events: none;
+}
+#signup .signinput input:focus ~ label,
+#signup .signinput input:valid ~ label
+{
+    top: -40%;  
+    left: -2%; 
+    color: rgb(12, 122, 122);
+}
+#signup .signinput{
+    position: relative;
+}
+#sign0{
+    text-align: center;
+    margin-bottom: -4px;
+}
+#forlogin{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#displayCart{
+    position: fixed;
+    left: 50%;
+    top: 55%;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    transform: translate(-50% , -50%);
+    width: 70.0rem;
+    height: 30.0rem;
+    display: none;
+}
+.cartHeader{
+    display: flex;
+    position: relative;
+    left: 10%;
+    top: 4%;
+}
+.cartHeader h3{
+    margin-left: 4.0rem;
+    border-bottom: 2px solid white;
+}
+#prd{
+    margin-right: 8.0rem;
+}
+.displayProducts{
+    color: black;
+    font-size: 1.40rem;
+    /* display: inline; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 1px solid white;
+    margin-top: 2.0rem;
+}
+.fullcart{
+    background-color: white;
+}
+.displayProduct{
+    /* display: flex; */
+    position: relative;
+    left: 16%;
+    /* top: 30%; */
+    margin-top: 0.20rem;
+    padding: 0.50rem 1.0rem;
+   
+}
+#removeicon{
+    position: absolute;
+    display: flex;
+    left: 93.80%;
+    margin-top: -3.35rem;
+    background: transparent;
+    text-align: center;
+    padding: 1.0rem 1.0rem;
+}
+#removeicon:hover{
+    background-color: red;
+}
+.displayprice{
+    position: relative;
+    left: 45%;
+    /* top: 30%; */
+    margin-top: -1.0rem;
+
+}
+.displayquentity{
+    position: relative;
+    left: 60%;
+    top: -10%;
+    margin-top: -1.50rem;
+}
+.displaytotal{
+    position: relative;
+    left: 73%;
+    /* top: 30%; */
+    margin-top: -1.60rem;
+}
+.cartimg{
+    width: 7.0rem;
+    position: relative;
+    left: -6%;
+    margin-top: -1.60rem;
+}
+.cartfooter{
+    position: relative;
+    top: 0%;
+    width: 62.60rem;
+    height: 3.0rem;
+    background: black;
+    border-bottom-left-radius: .50rem;
+    border-bottom-right-radius: .50rem;
+    box-shadow: 0px -1px 20px 0px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#clrbtn button{
+    background-color: white;
+    color: black;
+    padding: .40rem .70rem;
+    border: 1px solid black;
+    margin: .50rem;
+}
+#clrbtn{
+    margin-top: -4.60rem;
+}
+#clrbtn button:hover{
+    background-color: red;
+}
+#grandtotal{
+    color: white;
+    font-size: 1.20rem;
+    position: relative;
+    top: 15%;
+    margin-left: 17.0rem;
+    left: 30%;
+    display: flex;
+}
+#grandtotal h3{
+    margin-left: 1.0rem;
+}
+#proceedbtn{
+    position: relative;
+    top: -60%;
+    left: 80%;
+}
+#proceedbtn button{
+    background-color: yellowgreen;
+    color: black;
+    padding: .40rem .70rem;
+    border: none;
+    margin: .50rem;
+    font-size: 1.20rem;
+    border-radius: 5px;
+    padding: .40rem 1.0rem;
+    cursor: pointer; 
+}
+
+.emptytext{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------media quary for responsive web---------------- */
+
+@media(max-width: 375px){
+    html{
+        font-size: 55%;
+    }
+    .banner img{
+        position: absolute;
+        top: 7%;
+        object-fit:cover;
+        width: 103vw;
+        height: 30.9rem;
+    }
+    .heading{
+        position: absolute;
+        top: 16%;
+        left: 10%;
+        text-align: center;
+    }
+    #searchinput{
+        display: none;
+        width: 30px;
+        animation: none;        
+    }
+    .search{
+        margin-right: 10.20rem;
+    }
+    .search button{
+        margin-left: -1.0rem;
+    }
+    #register{
+        text-align: right;
+        margin-right: 11.0rem;
+        margin-top: 7.0rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.2rem;
+        color: white;
+    }
+    .products{
+        top: 50%;
+    }
+    .productcontainer{
+        /* background-color: red; */
+        margin-top: 3.0rem;
+        margin-left: 4.0rem;
+        display: grid;
+        width: 90vw;
+        height: 100vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 1.0rem;
+        /* column-gap: -4.0rem; */
+    }
+    .ourprd{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        left: 15%;
+        display: block;
+    }
+    .filter{
+        position: absolute;
+        display: flex;
+        left: 60%;
+        top: 0%;
+    }
+
+    .onsale{
+        position: absolute;
+        top: 195%;
+    }
+    .onsalecontant img{
+        visibility: hidden;
+    }
+    .saleproduct1{
+        position: absolute;
+        top:18%;
+        left: 15%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+        width: 120px;
+        height: 200px;
+    }
+    .saleproductdis1{
+        margin-top: 100px;
+    }
+    .saleproduct1 img{
+        position: absolute;
+        left: -5%;
+        top: -30%;
+        width: 15.0rem;
+        height: 19.0rem;
+    }
+    .saleproduct2{
+        position:absolute;
+        top: 18%;
+        left: 53%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+        /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+        width: 120px;
+        height: 200px;
+    }
+    .saleproductdis2{
+        margin-top: 100px;
+    }
+    .saleproduct2 img{
+        position: absolute;
+        left: -50%;
+        top: -10%;
+        width: 19.0rem;
+        height: 14.0rem;
+    }
+    .saleproduct4{
+        position:absolute;
+        top: 50%;
+        left: 15%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+        /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+        width: 120px;
+        height: 200px;
+    }
+    .saleproductdis4{
+        margin-top: 100px;
+    }
+    .saleproduct4 img{
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        width: 12.0rem;
+        height: 9.0rem;
+    }
+    .saleproduct3{
+        position:absolute;
+        top: 50%;
+        left: 53%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px 0px rgb(7, 7, 7);
+        /* padding: 1.0rem 2.0rem 2.0rem 13.0rem; */
+        width: 120px;
+        height: 200px;
+    }
+    .saleproductdis3{
+        margin-top: 100px;
+    }
+    .saleproduct3 img{
+        position: absolute;
+        left: -45%;
+        top: -10%;
+        width: 18.0rem;
+        height: 15.0rem;
+    }
+    
+    .onsaleproduct h1{
+        color: rgb(0, 0, 0);
+    }
+    #check{
+        display: none;
+    }
+    @keyframes sale{
+        0%{
+            background-color: green;
+            color: black;
+        }
+        5%{
+            background-color: green;
+            color: black;
+        }
+        
+    }
+    .onsaleproduct h1{
+        top: 7%;
+        left: 33%;
+    }
+
+    .supportbaar{
+        position: absolute;
+        top: 280%;
+        left: 15%;
+        width: 30.0rem;
+        height: 15.0rem;
+        border-radius: 10px;
+    }
+    .support{
+        display: inline;
+        text-align: center;
+        
+    }
+    .support p{
+        margin-top: 17px;
+        margin-left: -10px;
+    }
+
+    #aboutus{
+        position: absolute;
+        top: 304%;
+        left: 15%;
+        width: 30.0rem;
+        height: 25.0rem;
+    }
+    #aboutus img{
+        width: 100px;
+    }
+    #aboutus p{
+        margin-top: -6.50rem;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .intro{
+        padding-left: 15.0rem;
+        display: inline;
+        margin-right: 18px;
+        text-align: center;
+    }
+    #footer{
+        position: absolute;
+        top: 340%;
+        height: 45vh;
+        width: 103vw;
+    }
+    
+    .footermenu ul li{
+        margin-left: 0.0rem;
+    }
+    .footercontact ul li{
+        margin-left: -1.0rem;
+    }
+    .footerservice ul li{
+        margin-left: 0.0rem;     
+    }
+    .footercontact{
+        position: absolute;
+        left: 4%;
+        top: 30%;
+    }
+    .footermenu{
+        position: absolute;
+        left: 45%;
+        top: 30%;
+    }
+    .footerservice{
+        position: absolute;
+        left: 75%;
+        top: 30%;
+    }
+    .footerinput{
+        display: flex;
+        margin: auto;
+        width: 330px;
+        padding-top: 2.0rem;
+    }
+    .contactno{
+        margin-left: 2.0rem;
+    }
+    .salelink{
+        color: white;
+    }
+
+    
+    .responsive{
+        display: block;
+        position: absolute;
+        left: 90%;
+        top: 2%;
+    }
+    .responsive button{
+        background-color: transparent;
+        border: none;
+        margin-top: .60rem;
+    }
+    .responsive .fa{
+        color: black;
+    }
+    #menu0{
+        background-color: black;
+        opacity: 95%;
+        color: white;
+        width: 70vw;
+        height: 100vh;
+        position: fixed;
+        left: 31.0%;
+        top: 7.50%;
+        margin-top: -7px;
+        /* float: right; */
+        display: none;
+        overflow-y: scroll;
+        animation: 0.50s menuslide linear;
+    }
+    @keyframes menuslide{
+        from{
+            left: 93%;
+        }
+    }
+    .menubaar ul li{
+        display: block;
+        text-align: center;
+        margin-top: 5.0rem;
+        margin-left: 10px;
+        cursor: pointer;
+        /* padding: .60rem; */
+    }
+    .menusocialicon i{
+        color: white;
+        font-size: 20px;
+        background-color: yellowgreen;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .menusocialicon{
+        display: block;
+        margin-top: 490px;
+        text-align: center;
+        /* padding-left: 100px; */
+    }
+    .fruitslist{
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        display: none;
+    }
+    .vegetablelist{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* display: none; */
+    }
+    .menubaar{
+        animation: none;
+    }
+    #userid{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        border-radius: 10px;
+        background: black;
+        color: white;
+        transform: translate(-50% , -50%);
+        width: 300px;
+        height: 400px;
+        display: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #login{
+        padding: 80px 20px;
+        display: block;
+        animation: 1.0s loginanimation;
+    }
+    #signup{
+        padding: 30px 20px;
+        display: none;
+        animation: 1.0s signupanimation;
+    }
+    #basket{
+        position: absolute;
+        top: 3%;
+        left: 80%;
+    }
+    #displayCart{
+        width: 40.0rem;
+        height: 50.0rem;
+    }
+    .cartHeader{
+        left: -4%;
+        
+    }
+    #prd{
+        margin-right: 2.0rem;
+    }
+    .displayProduct{
+       left: 3%;   
+    }
+    .displayprice{
+        left: 35%;
+        
+    }
+    .displayquentity{
+       
+        left: 60%;
+        top: -10%;
+        margin-top: -1.50rem;
+    }
+    .displaytotal{
+        
+        left: 80%;
+        
+    }
+    #removeicon{
+       left: 93.0%;
+        padding: 1.0rem 0.50rem;
+    }
+    .cartfooter{
+        width: 40.0rem;
+        background: black;
+    }
+    #clrbtn button{
+        padding: .30rem .60rem;
+        margin: 0%;
+        margin-left: 1.0rem;
+    }
+    #grandtotal{
+        color: white;
+        font-size: 1.20rem;
+        position: relative;
+        top: 15%;
+        margin-left: 17.0rem;
+        left: 0%;
+        display: flex;
+    }
+    #proceedbtn{
+        position: relative;
+        top: -60%;
+        left: 70%;
+    }
+}
